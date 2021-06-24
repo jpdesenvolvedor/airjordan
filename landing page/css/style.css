@@ -1,0 +1,204 @@
+:root {
+    --white: #fff;
+    --title: 'Bebas Neue', cursive;
+    --body:  'Roboto', sans-serif;
+    --black: #000;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+/* menu */
+.menu .container {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+}
+.menu-nav {
+    font-family: var(--title);
+    font-size: 1.3em;
+}
+.menu-nav ul{
+    display: flex;
+}
+.menu-nav ul li {
+    margin: 0 10px;
+}
+.menu-nav ul li a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 10px;
+    transition: 1s;
+}
+.menu-nav ul li a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+/* banner */
+.bg-intro {
+    background-image: url("../img/bg-jordan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+    text-align: right;
+    color: var(--white);
+    filter: brightness(90%);
+}
+.bg-title {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    font-family: var(--title);
+}
+.btn-white {
+    width: 150px;
+    padding: 15px;
+    background-color: var(--white);
+    border: none;
+    font-size: 1em;
+    font-family: var(--body);
+    cursor: pointer;
+    transition: 1s;
+    font-family: var(--title);
+}
+.btn-white:hover {
+    background-color: #d9d9d9;    
+}
+
+/* About us */
+.title {
+    font-size: 3em;
+    font-family: var(--title);
+    margin-bottom: 1em;
+}
+.about .container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.about-desc {
+    display: flex;
+    align-self: top;
+    justify-content: space-between;
+}
+.about-desc p {
+    font-family: var(--body);
+    font-size: 1em;
+    width: 50%;
+    line-height: 1.5em;
+}
+.about-desc img {
+    width: 40%;
+    box-shadow: 1px 1px 1px #ccc;
+}
+/* Products */
+.products {
+    margin-bottom: 120px;
+}
+.products-desc {
+    display: flex;
+    justify-content: space-between;
+}
+figure {
+    background-color: #f6f6f6;
+    width: 30%;
+    align-self: top;
+    padding: 5px;
+    justify-content: center;
+}
+figure img {
+    width: 100%;
+    height: 200px;
+    box-shadow: 1px 1px 1px #ccc;
+}
+figcaption {
+    display: flex;
+    justify-content: center;
+}
+.btn-purchase {
+    padding: 10px;
+    align-items: center;
+    width: 150px;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    font-family: var(--title);
+    cursor: pointer;
+    transition: 1s;
+}
+.btn-purchase:hover {
+    background-color: #d1d1d1;
+    color: var(--black);
+}
+
+/* footer */
+footer {
+    height: 80px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--title);
+}
+
+/* Mobile */
+@media screen and (max-width: 450px){
+    .container {
+        width: 350px;
+    }
+    .bg-intro {
+        text-align: center;
+    }
+    .about-desc {
+        flex-direction: column;
+    }
+    .about-desc p {
+        width: 100%;
+    }
+    .about-desc img {
+        width: 100%;
+    }
+    .products-desc {
+        flex-direction: column;
+    }
+    figure {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 768px){
+    .container {
+        width: 400px;
+    }
+    .bg-intro {
+        text-align: center;
+    }
+    .about-desc {
+        flex-direction: column;
+    }
+    .about-desc p {
+        width: 100%;
+    }
+    .about-desc img {
+        width: 100%;
+    }
+    .products-desc {
+        flex-direction: column;
+    }
+    figure {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
